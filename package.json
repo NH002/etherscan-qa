@@ -1,0 +1,19 @@
+{
+  "name": "etherscan-qa",
+  "version": "0.0.1",
+  "description": "Etherscan QA testing using Cucumber/Selenium",
+  "scripts": {
+    "test": "cucumber-js",
+    "cucumber": "cucumber-js",
+    "geckodriver": "geckodriver",
+    "chromedriver": "chromedriver"
+  },
+  "author": "Nikola Hadžić",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.1",
+    "chromedriver": "^111.0.0",
+    "geckodriver": "^3.2.0",
+    "selenium-webdriver": "^4.8.2"
+  }
+}

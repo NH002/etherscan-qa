@@ -1,0 +1,14 @@
+# Selenium Grid config file
+
+[node]
+detect-drivers = false
+
+[[node.driver-configuration]]
+display-name = "Firefox"
+webdriver-executable = "./node_modules/.bin/geckodriver"
+stereotype = "{ \"browserName\": \"firefox\" }"
+
+[[node.driver-configuration]]
+display-name = "Chrome"
+webdriver-executable = "./node_modules/.bin/chromedriver"
+stereotype = "{ \"browserName\": \"chrome\" }"
