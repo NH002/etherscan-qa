@@ -1,3 +1,7 @@
+## Motivation
+
+I created this project to fulfill a practical task of a job hiring process.
+
 ## Description
 
 Node.js app utilizing [Cucumber][1] and [Selenium][2] for the purpose of testing the user account registration form at <https://etherscan.io/register>.
