@@ -21,10 +21,6 @@ switch (BROWSER) {
         throw Error('Unsupported browser: ' + BROWSER);
 }
 
-/* Selenium Grid server */
-
-const GRID_URL = process.env.SELENIUM_TEST_BASIC ? null : (process.env.SELENIUM_TEST_GRID_URL ? process.env.SELENIUM_TEST_GRID_URL : 'http://localhost:4444/');
-
 /* User registration data */
 
 const TEST_USERNAME = process.env.SELENIUM_TEST_USERNAME ? process.env.SELENIUM_TEST_USERNAME : 'example';
@@ -34,6 +30,10 @@ const TEST_PASSWORD = process.env.SELENIUM_TEST_PASSWORD ? process.env.SELENIUM_
 if (!/^\w{5,30}$/.test(TEST_USERNAME) || !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(TEST_EMAIL) || TEST_PASSWORD.length < 8) {
     throw Error('Invalid user registration data');
 }
+
+/* Selenium Grid server */
+
+const GRID_URL = process.env.SELENIUM_TEST_BASIC ? null : (process.env.SELENIUM_TEST_GRID_URL ? process.env.SELENIUM_TEST_GRID_URL : 'http://localhost:4444/');
 
 /* Website URLs */
 
