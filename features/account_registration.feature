@@ -23,9 +23,9 @@ Feature: Account registration
         When they modify the username such that it is empty
         Then display the message "Please enter Username." below the username
 
-    Scenario: User modifies the username such that it has 1-4 characters
+    Scenario: User modifies the username such that it has 1–4 characters
         Given that a user is on the registration page
-        When they modify the username such that it has 1-4 characters
+        When they modify the username such that it has 1–4 characters
         Then display the message "Please enter at least 5 characters." below the username
 
     Scenario: User tries to insert more than 30 characters into the username
@@ -53,14 +53,14 @@ Feature: Account registration
         When they modify the email confirmation such that it doesn't match email
         Then display the message "Email address does not match." below the email confirmation
 
-    Scenario: User modifies the password such that it has 1-7 characters
+    Scenario: User modifies the password such that it has 1–7 characters
         Given that a user is on the registration page
-        When they modify the password such that it has 1-7 characters
+        When they modify the password such that it has 1–7 characters
         Then display the message "Your password must be at least 8 characters long." below the password
 
-    Scenario: User modifies the password confirmation such that it has 0-7 characters
+    Scenario: User modifies the password confirmation such that it has 0–7 characters
         Given that a user is on the registration page
-        When they modify the password confirmation such that it has 0-7 characters
+        When they modify the password confirmation such that it has 0–7 characters
         Then display the message "Your password must be at least 8 characters long." below the password confirmation
 
     Scenario: User modifies the password confirmation such that it doesn't match password

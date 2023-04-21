@@ -31,7 +31,7 @@ You can configure the testing parameters through environment variables, namely:
 | `SELENIUM_TEST_BASIC`     | Do not use Selenium Grid.                 | anything                                      |                           |
 | `SELENIUM_TEST_BROWSER`   | Browser to run the tests on.              | `firefox`, `chrome`                           | `firefox`                 |
 | `SELENIUM_TEST_GRID_URL`  | Selenium Grid server URL to connect at.   | anything                                      | `http://localhost:4444/`  |
-| `SELENIUM_TEST_USERNAME`  | Account username for registration.        | string of 5-30 characters, only alphanumerics | `example`                 |
+| `SELENIUM_TEST_USERNAME`  | Account username for registration.        | string of 5–30 characters, only alphanumerics | `example`                 |
 | `SELENIUM_TEST_EMAIL`     | Account email address for registration.   | any valid email address                       | `example@example.com`     |
 | `SELENIUM_TEST_PASSWORD`  | Account password for registration.        | string of at least 8 characters               | `12345678`                |
 
